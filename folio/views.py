@@ -57,5 +57,5 @@ class Language(ListAPIView):
 
 
 class Email(CreateAPIView):
-    serializer_class = SendEmailSerializer
     queryset = SendEmail.objects.all()
+    serializer_class = SendEmailSerializer
