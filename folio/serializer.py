@@ -1,6 +1,7 @@
 from .models import (
     UserInfo,
     CustomerSaid,
+    SendEmail,
     WorkExperience,
     LanguageSkill,
     ServiceProvider,
@@ -11,7 +12,7 @@ from rest_framework import (
 )
 
 
-class UserSerializer(serializers.ModelSerializer):
+class UserInfoSerializer(serializers.ModelSerializer):
     class Mata:
         model = UserInfo
         fields = '__all__'
@@ -42,6 +43,12 @@ class ServiceProviderSerializer(serializers.ModelSerializer):
 
 
 class AboutUserSerializer(serializers.ModelSerializer):
+    class Mata:
+        model = AboutUser
+        fields = '__all__'
+
+
+class SendEmailSerializer(serializers.ModelSerializer):
     class Mata:
         model = AboutUser
         fields = '__all__'

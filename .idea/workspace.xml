@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="de71d921-4ee4-466f-bf75-386e67c25d31" name="Default Changelist" comment="" />
+    <list default="true" id="de71d921-4ee4-466f-bf75-386e67c25d31" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/folio/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/folio/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/folio/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/folio/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/folio/serializer.py" beforeDir="false" afterPath="$PROJECT_DIR$/folio/serializer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/folio/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/folio/views.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,22 +23,22 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="2648" />
+          <entry key="py" value="3036" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="2648" />
+          <entry key="Python" value="3036" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="3" />
+          <entry key="py" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Python" value="3" />
+          <entry key="Python" value="5" />
         </counts>
       </usages-collector>
     </session>
@@ -50,32 +55,57 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/folio/models.py">
+        <entry file="file://$PROJECT_DIR$/folio/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="568">
-              <caret line="56" lean-forward="true" selection-start-line="56" selection-end-line="56" />
+            <state relative-caret-position="391">
+              <caret line="23" column="1" lean-forward="true" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
               <folding>
-                <marker date="1571446405346" expanded="true" signature="88:93" ph="..." />
-                <marker date="1571446405346" expanded="true" signature="666:711" ph="..." />
-                <marker date="1571446405346" expanded="true" signature="956:1079" ph="..." />
-                <marker date="1571446405346" expanded="true" signature="1114:1119" ph="..." />
-                <marker date="1571446405346" expanded="true" signature="1270:1418" ph="..." />
-                <marker date="1571446405346" expanded="true" signature="1450:1455" ph="..." />
-                <marker date="1571446405346" expanded="true" signature="1450:1606" ph="..." />
+                <element signature="e#85#278#0" expanded="true" />
+                <marker date="1571449169710" expanded="true" signature="577:620" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/folio/admin.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="18" column="29" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
+              <folding>
+                <element signature="e#0#32#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/folio/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+              <folding>
+                <marker date="1571448065013" expanded="true" signature="88:93" ph="..." />
+                <marker date="1571448065013" expanded="true" signature="715:760" ph="..." />
+                <marker date="1571448065013" expanded="true" signature="1107:1230" ph="..." />
+                <marker date="1571448065013" expanded="true" signature="1315:1320" ph="..." />
+                <marker date="1571448065013" expanded="true" signature="1520:1668" ph="..." />
+                <marker date="1571448065013" expanded="true" signature="1750:1755" ph="..." />
+                <marker date="1571448065013" expanded="true" signature="1750:1957" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/folio/serializer.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="466">
-              <caret line="45" column="25" lean-forward="true" selection-start-line="45" selection-start-column="25" selection-end-line="45" selection-end-column="25" />
+            <state relative-caret-position="432">
+              <caret line="50" column="21" selection-start-line="50" selection-start-column="21" selection-end-line="50" selection-end-column="21" />
               <folding>
                 <element signature="e#0#144#0" expanded="true" />
-                <marker date="1571447511458" expanded="true" signature="229:234" ph="..." />
-                <marker date="1571447511458" expanded="true" signature="229:298" ph="..." />
+                <marker date="1571449120827" expanded="true" signature="248:253" ph="..." />
+                <marker date="1571449120827" expanded="true" signature="248:317" ph="..." />
               </folding>
             </state>
           </provider>
@@ -112,10 +142,12 @@
         <option value="$PROJECT_DIR$/portfolo/settings.py" />
         <option value="$PROJECT_DIR$/folio/models.py" />
         <option value="$PROJECT_DIR$/folio/serializer.py" />
+        <option value="$PROJECT_DIR$/folio/views.py" />
+        <option value="$PROJECT_DIR$/folio/admin.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-16" />
     <option name="y" value="157" />
     <option name="width" value="1284" />
@@ -220,30 +252,51 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/folio/models.py">
+    <entry file="file://$PROJECT_DIR$/folio/serializer.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="568">
-          <caret line="56" lean-forward="true" selection-start-line="56" selection-end-line="56" />
+        <state relative-caret-position="432">
+          <caret line="50" column="21" selection-start-line="50" selection-start-column="21" selection-end-line="50" selection-end-column="21" />
           <folding>
-            <marker date="1571446405346" expanded="true" signature="88:93" ph="..." />
-            <marker date="1571446405346" expanded="true" signature="666:711" ph="..." />
-            <marker date="1571446405346" expanded="true" signature="956:1079" ph="..." />
-            <marker date="1571446405346" expanded="true" signature="1114:1119" ph="..." />
-            <marker date="1571446405346" expanded="true" signature="1270:1418" ph="..." />
-            <marker date="1571446405346" expanded="true" signature="1450:1455" ph="..." />
-            <marker date="1571446405346" expanded="true" signature="1450:1606" ph="..." />
+            <element signature="e#0#144#0" expanded="true" />
+            <marker date="1571449120827" expanded="true" signature="248:253" ph="..." />
+            <marker date="1571449120827" expanded="true" signature="248:317" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/folio/serializer.py">
+    <entry file="file://$PROJECT_DIR$/folio/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="466">
-          <caret line="45" column="25" lean-forward="true" selection-start-line="45" selection-start-column="25" selection-end-line="45" selection-end-column="25" />
+        <state relative-caret-position="357">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
           <folding>
-            <element signature="e#0#144#0" expanded="true" />
-            <marker date="1571447511458" expanded="true" signature="229:234" ph="..." />
-            <marker date="1571447511458" expanded="true" signature="229:298" ph="..." />
+            <marker date="1571448065013" expanded="true" signature="88:93" ph="..." />
+            <marker date="1571448065013" expanded="true" signature="715:760" ph="..." />
+            <marker date="1571448065013" expanded="true" signature="1107:1230" ph="..." />
+            <marker date="1571448065013" expanded="true" signature="1315:1320" ph="..." />
+            <marker date="1571448065013" expanded="true" signature="1520:1668" ph="..." />
+            <marker date="1571448065013" expanded="true" signature="1750:1755" ph="..." />
+            <marker date="1571448065013" expanded="true" signature="1750:1957" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/folio/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="1" lean-forward="true" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
+          <folding>
+            <element signature="e#85#278#0" expanded="true" />
+            <marker date="1571449169710" expanded="true" signature="577:620" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/folio/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="29" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
           </folding>
         </state>
       </provider>
