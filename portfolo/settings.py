@@ -9,7 +9,6 @@ https://docs.djangoproject.com/en/2.2/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/2.2/ref/settings/
 """
-import django_heroku
 import os
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
@@ -133,6 +132,3 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'images')
 #     'DEFAULTE_'
 # }
 CORS_ORIGIN_ALLOW_ALL = True
-
-# Activate Django-Heroku.
-django_heroku.settings(locals())
