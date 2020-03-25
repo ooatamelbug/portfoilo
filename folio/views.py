@@ -5,9 +5,11 @@ from .serializer import (
     WorkExperienceSerializer,
     LanguageSkillSerializer,
     AboutUserSerializer,
-    CustomerSaidSerializer,
+    WorkHistorySerializer,
+    EducationHistorySerializer,
     ServiceProviderSerializer,
-    SendEmailSerializer
+    SendEmailSerializer,
+    TypeWorkSerializer
 )
 from rest_framework.generics import (
     ListAPIView,
@@ -15,12 +17,14 @@ from rest_framework.generics import (
 )
 from .models import (
     UserInfo,
-    CustomerSaid,
+    WorkHistory,
+    EducationHistory,
     WorkExperience,
     LanguageSkill,
     ServiceProvider,
     AboutUser,
-    SendEmail
+    SendEmail,
+    TypeWork
 )
 
 # Create your views here.
@@ -46,9 +50,14 @@ class Work(ListAPIView):
     serializer_class = WorkExperienceSerializer
 
 
-class Customer(ListAPIView):
-    queryset = CustomerSaid.objects.all()
-    serializer_class = CustomerSaidSerializer
+class Education(ListAPIView):
+    queryset = EducationHistory.objects.all()
+    serializer_class = EducationHistorySerializer
+
+
+class Workhistory(ListAPIView):
+    queryset = WorkHistory.objects.all()
+    serializer_class = WorkHistorySerializer
 
 
 class Language(ListAPIView):
@@ -59,3 +68,8 @@ class Language(ListAPIView):
 class Email(CreateAPIView):
     queryset = SendEmail.objects.all()
     serializer_class = SendEmailSerializer
+
+
+class Type(ListAPIView):
+    queryset = TypeWork.objects.all()
+    serializer_class = TypeWorkSerializer

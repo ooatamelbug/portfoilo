@@ -1,15 +1,23 @@
 from .models import (
     UserInfo,
-    CustomerSaid,
+    WorkHistory,
+    EducationHistory,
     SendEmail,
     WorkExperience,
     LanguageSkill,
     ServiceProvider,
-    AboutUser
+    AboutUser,
+    TypeWork
 )
 from rest_framework import (
     serializers
 )
+
+
+class TypeWorkSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = TypeWork
+        fields = '__all__'
 
 
 class UserInfoSerializer(serializers.ModelSerializer):
@@ -19,14 +27,22 @@ class UserInfoSerializer(serializers.ModelSerializer):
 
 
 class WorkExperienceSerializer(serializers.ModelSerializer):
+    type = TypeWorkSerializer()
+
     class Meta:
         model = WorkExperience
+        fields = ('id', 'title', 'desc', 'link', 'image', 'type','technology')
+
+
+class WorkHistorySerializer(serializers.ModelSerializer):
+    class Meta:
+        model = WorkHistory
         fields = '__all__'
 
 
-class CustomerSaidSerializer(serializers.ModelSerializer):
+class EducationHistorySerializer(serializers.ModelSerializer):
     class Meta:
-        model = CustomerSaid
+        model = EducationHistory
         fields = '__all__'
 
 

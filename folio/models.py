@@ -9,7 +9,7 @@ class UserInfo(models.Model):
     job_title = models.CharField(max_length=200)
     image = models.ImageField(blank=True)
     text_desc = models.TextField()
-    cv = models.CharField(max_length=200, blank=True)
+    cv = models.FileField(blank=True)
     resume = models.CharField(max_length=200, blank=True)
     git = models.CharField(max_length=200, blank=True)
     linked_in = models.CharField(max_length=200, blank=True)
@@ -46,10 +46,30 @@ class ServiceProvider(models.Model):
         return self.title
 
 
-class CustomerSaid(models.Model):
+class WorkHistory(models.Model):
     name = models.CharField(max_length=200)
-    job = models.CharField(max_length=200)
-    quote = models.TextField()
+    company = models.CharField(max_length=200)
+    pariod = models.CharField(max_length=200)
+    desc = models.TextField()
+    technology = models.TextField()
+
+    def __str__(self):
+        return self.name
+
+
+class EducationHistory(models.Model):
+    title = models.CharField(max_length=200)
+    place = models.CharField(max_length=200)
+    pariod = models.CharField(max_length=200)
+    desc = models.TextField()
+
+    def __str__(self):
+        return self.title
+
+
+class TypeWork(models.Model):
+    name = models.CharField(max_length=200)
+    slug = models.SlugField(default='Null')
 
     def __str__(self):
         return self.name
@@ -58,8 +78,10 @@ class CustomerSaid(models.Model):
 class WorkExperience(models.Model):
     title = models.CharField(max_length=200)
     desc = models.TextField()
-    link = models.URLField(unique=True)
+    link = models.URLField(blank=True)
     image = models.ImageField()
+    technology = models.TextField(default='Null')
+    type = models.ForeignKey(TypeWork, on_delete=models.CASCADE, default=1)
 
     def __str__(self):
         return self.title
